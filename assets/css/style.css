@@ -1,0 +1,227 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+.navbar {
+    background-image: linear-gradient(rgb(19, 132, 124), rgb(132, 180, 180));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+.titulo {
+    color: white;
+    margin-inline: 20px;
+}
+.subtitulo {
+    color: white;
+}
+.texto {
+    color: white;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links {
+    margin-inline: 10px;
+}
+.link {
+    color: white;
+    margin-inline: 10px;
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(132, 180, 180, 0.34);
+    background-image: url('/data/img/studio.png');
+    background-blend-mode:luminosity;
+    background-size: cover;
+}
+#nome {
+    color: rgb(19, 132, 124);
+    margin: 0;
+    font-size: 100px;
+}
+#slogan {
+    color: rgb(19, 132, 124);
+}
+
+#servicos {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#servicos h1 {
+    color: rgb(19, 132, 124);
+}
+.aulas {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(rgb(19, 132, 124), rgb(132, 180, 180));
+}
+.aula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+}
+.aula:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.aula h2, .aula p {
+    color: rgb(19, 132, 124);
+}
+
+#quem-somos {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 60vh;
+    color: rgb(19, 132, 124);
+}
+.historia h1 {
+    color: rgb(19, 132, 124);
+}
+.imagens {
+    width: 30%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "i i" "i i";
+}
+.imagem {
+    height: 100%;
+    grid-area: 'i';
+}
+#fale-conosco {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.localizacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(rgb(19, 132, 124), rgb(132, 180, 180));
+    margin: 10px;
+    transition: box-shadow 0.5s;
+}
+.localizacao:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#mapa {
+    border-radius: 20px 20px 0 0;
+}
+#endereco {
+    width: 390px;
+    text-align: center;
+}
+#seg-sex, #sab {
+    text-align: center;
+}
+.contatos {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+    justify-content: space-between;
+}
+.contatos .subtitulo {
+    display: flex;
+    margin-top: 0;
+    align-items:center;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    background-image: linear-gradient(rgb(19, 132, 124), rgb(132, 180, 180));
+}
+.contatos .subtitulo:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.nosso-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin-inline: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(rgb(19, 132, 124), rgb(132, 180, 180));
+    transition: box-shadow 0.5s;
+}
+.contato:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.contato a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.contato a p {
+    color: white;
+    margin-inline: 4px;
+}
+#whatsapp svg {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+#email svg {
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.3));
+}
