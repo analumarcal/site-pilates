@@ -51,7 +51,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: rgba(132, 180, 180, 0.34);
-    background-image: url('./site-pilates/data/img/studio.png');
+    background-image: url('../site-pilates/data/img/studio.png');
     background-blend-mode:luminosity;
     background-size: cover;
 }
